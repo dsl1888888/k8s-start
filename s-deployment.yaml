@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-nginx001
+  labels:
+    app: demo-nginx001
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: demo-nginx001
+      labels:
+        app: demo-nginx001
+    spec:
+      containers:
+        - name: demo-nginx001
+          image: nginx
+          imagePullPolicy: Always
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: demo-nginx001
