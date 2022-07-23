@@ -9,6 +9,6 @@ spec:
     - port: 80
       targetPort: 80
       #   暴露端口取值范围是30000-32767
-      nodePort: 30333
+      nodePort: 30033
   # 使用NodePort类型的Service，绑定service的30201端口到宿主机，以便在物理机上调用
   type: NodePort

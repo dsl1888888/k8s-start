@@ -25,3 +25,11 @@ microk8s.kubectl delete -f b-deployment.yaml
 microk8s.kubectl delete -f b-service.yaml
 
 ````
+
+# brower
+
+````
+curl http://us01.tool1314.com:30333/
+
+curl http://us01.tool1314.com:30322/
+````
