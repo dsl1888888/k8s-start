@@ -13,7 +13,7 @@ spec:
         app: demo-nginx001
     spec:
       imagePullSecrets:
-        - test-secret
+        - name: test-secret
       containers:
         - name: demo-nginx001
           image: ovpn.tool1314.com/libraryprivate/nginx:latest
