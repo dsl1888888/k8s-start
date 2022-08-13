@@ -12,9 +12,11 @@ spec:
       labels:
         app: demo-nginx001
     spec:
+      imagePullSecrets:
+        - test-secret
       containers:
         - name: demo-nginx001
-          image: nginx
+          image: ovpn.tool1314.com/libraryprivate/nginx:latest
           imagePullPolicy: Always
       restartPolicy: Always
   selector:

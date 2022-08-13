@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: appname
-        image: nginx
+        image: ovpn.tool1314.com/library/nginx:latest
         resources:
           requests:
             memory: "32Mi"
